@@ -1,0 +1,191 @@
+/* //// Styling for the BODY [the main background image and where all text font changes lie] //// */
+
+body{
+    background-image: url("https://cdn.discordapp.com/attachments/963228635202998272/1135258370748715078/12300602_4844928.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: 'Schibsted Grotesk', sans-serif;
+}
+
+/*///// HEADER styling and title texts ////*/
+
+#header {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    text-align: center;
+    background-color: #215ca0;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+#header img {
+    width: 100% !important;
+    max-height: 50%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+h1 {
+    color: white;
+}
+
+/* NAV BAR styling, each with their own section of sub comment titles for explanation of each nav style */
+
+/* Style the top navigation bar */
+.topnav {
+    display: flex;
+    width: calc(100%-100px);
+    justify-content: space-around;
+    overflow: hidden;
+    background-color: #215ca0;
+    margin-right: 50px;
+    margin-left: 50px;
+} 
+  
+/* Style the topnav links */
+.topnav a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: color 1s ease;
+}
+  
+/* Change color on hover of each text on nav bar */
+.topnav a:hover {
+    background-color: #942525;
+    color: black;
+}
+  
+/* Change the link color to #111 (black) on hover */
+
+li a:hover {
+    background-color: #111;
+}
+
+/* ////  Main content styline (body of the web) with different classes and id styles  ////*/
+
+#content{
+    background-color: #ffffff;
+    margin-right: 50px;
+    margin-left: 50px;
+    color: rgb(32, 32, 32);
+}
+
+/* First div of the page to say welcome using an id as it will only be used once as with the same styles using the '#' infront of the id's*/
+
+#introduction{
+    padding: 5px;
+    text-align: center;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+#recent_releases{
+    text-align: center;
+    text-decoration: underline;
+}
+
+/* API styling starts here with comic-panel and comic identifiers */
+
+#comic-panel{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#comic-panel img{
+    display: block;
+    width: auto;
+    height: 35vh;
+}
+
+/* Main styling choices for the API and to be set as a class */
+
+.comic{
+    display: block;
+    text-align: center;
+    min-width: 350px;
+    max-width: 350px;
+    background-color: lightgrey;
+    padding-top: 10px;
+    margin: 20px 10px 20px 10px;
+    border-radius: 15px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 8px;
+    box-sizing: border-box;
+}
+
+.comic img{
+    display: block;
+    margin: auto auto;
+}
+
+/* Container for flexboxes (the DC and Marvel boxes for "MUST READ") */
+
+section {
+    display: flex;
+    align-content: center;
+    padding-left: 200px;
+    padding-right: 200px;
+    margin-right: 150px;
+    margin-left: 150px;
+}
+
+/* DC left box styling using flex instead of floating for easability and useablility  */
+
+#dc-wrap{
+    flex: 2;
+    background: #85c4ff;
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+#dc-img{
+    max-width: 15%; 
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Marvel right side box syling using flex instead of floating for easability and useablility*/
+
+#marvel-wrap{
+    flex: 2;
+    background-color: #ff7373;
+    padding: 10px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#marvel-img{
+    max-width: 37%; 
+    height: auto;
+    align-items: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Underline colour changes in the table */
+
+hr {
+    color: #616161;
+}
+
+/* Footer styling */
+
+footer{
+    text-align: center;
+    padding: 15px;
+    background-color: #2a77ce;
+    color: white;
+    margin-right: 50px;
+    margin-left: 50px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Comic Cave</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk&display=swap" rel="stylesheet">
+
+    <script async src="./script.js"></script>
+</head>
+
+<body>  
+
+<!-- Header displaying the logo for the website within an id of header instead of class as it will be only used ONCE -->
+
+    <div id="header">
+        <img 
+            src="https://cdn.discordapp.com/attachments/963228635202998272/1136402648787058750/colorful-comic-style-zoom-background-r-182443752page1_6.jpg"
+            alt="/"
+        />
+    </div>
+
+<!-- This div will be the setup for the navigation bar, 
+    primarly styled through the css file with only one link being to the home page but still a placeholder to test out styling -->
+
+    <div class="topnav"> 
+        <a href="/index.html">Home</a>
+        <a href="/">My List</a>
+        <a href="/">DC</a>
+        <a href="/">Marvel</a>
+        <a href="/">News</a>
+    </div>
+
+<!-- The blow div is the start of the main body (not the actual body) of content that will be displayed with multiple ids 
+    to seperate each div allowing specific stylisation for each id  -->
+
+    <div>
+        <div id="content">
+            <div id="introduction">
+                <h2>Welcome to the Comic Cave where you will be able to find comic book news and recent releases!</h2>
+            </div>
+
+            <div>
+                <h2 id="recent_releases">
+                    <strong>THIS YEAR'S RELEASES!</strong>
+                </h2>
+            </div>
+
+<!-- This div here with the "comic-panel" is pulling the information from the ./script.js file and displaying it within this div throught the id 
+    thus why there is nothing within this div as it will be automatically filled through code already used -->
+
+            <div id="comic-panel"></div>
+
+<!-- start of the section and dc vs marvel boxes on must reads with inline styling within the header -->
+
+            <div>
+                <h3 style="text-align: center;">DC And Marvel <strong>MUST READ!</strong></h3>
+            </div>
+
+            <section>
+                    <div id="dc-wrap">
+
+<!-- used img tags instead of styling as well as instead of text with an id for styling the size of the image for later -->
+
+                        <img id="dc-img"
+                            src="https://cdn.discordapp.com/attachments/963228635202998272/1135246961709158520/DC_Comics_logo.svg.png" 
+                            alt="/"
+                        >
+                        <hr>
+
+<!-- ordered list for both boxes -->
+
+                            <ol>
+                                <li>Crisis on Infinite Earths event</li>
+                                <li>Infinite crisis Event</li>
+                                <li>Dark Knights Metal Line up</li>
+                                <li>Flash: Flashpoint Paradox</li>
+                                <li>Batman: The Killing Joke</li>
+                                <li>Superman All Star</li>
+                                <li>Batman Rebirth</li>
+                                <li>Action Comics</li>
+                            </ol>
+                    </div>
+                    
+                    <div id="marvel-wrap">
+
+                        <img id="marvel-img"
+                            src="https://media.discordapp.net/attachments/963228635202998272/1135246961939841024/Marvel_Logo.svg.png?width=1440&height=579" 
+                            alt="/"
+                        >
+                        <hr>
+                            <ol>
+                                <li>Infinity Saga</li>
+                                <li>Secret Wars</li>
+                                <li>Spider-Geddon</li>
+                                <li>Empyre</li>
+                                <li>Dawn of X</li>
+                                <li>Guardians reloaded</li>
+                                <li>Immortal Hulk</li>
+                                <li>House of X</li>
+                            </ol>
+                    </div>
+            </section><br><br>
+        </div>
+    </div>
+
+    <footer>
+        <div id="socials">
+            <p>
+                X (Twitter): TBC<br>
+                Facebook:TBC<br>
+                Instagram:TBC 
+            </p>
+        </div>
+    
+        <div id="tnc">
+            <p style="font-size: small;">
+                All test and purpose for website is for learning purposes only no intent on redistributing and selling products or advertisement.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
